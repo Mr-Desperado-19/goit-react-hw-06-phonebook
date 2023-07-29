@@ -1,10 +1,10 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { getFilter } from 'redux/selectors';
-// import {
-//   StyledFilterTextWrap,
-//   StyledFiltrWrap,
-//   StyledInput,
-// } from './Filter.styled';
+import {
+  StyledFilterTextWrap,
+  StyledFiltrWrap,
+  StyledInput,
+} from './Filter.styled';
 import { MdPersonSearch } from 'react-icons/md';
 import { setFilter } from 'redux/filtersSlice';
 

@@ -1,13 +1,13 @@
 import { ContactList } from '../contacts/ContactList';
 import { ContactForm } from '../contactForm/ContactForm';
 import { Filter } from '../filter/Filter';
-// import { StyledLayout } from './layout/Layout.styled';
-// import {
-//   StyledPhonebookWrap,
-//   StyledContactsTitle,
-//   StyledTitle,
-//   StyledTitleWrap,
-// } from './App.styled';
+import { StyledLayout } from '../layout/Layout.styled';
+import {
+  StyledPhonebookWrap,
+  StyledContactsTitle,
+  StyledTitle,
+  StyledTitleWrap,
+} from './App.styled';
 import { FaBook } from 'react-icons/fa';
 import { IoMdContacts } from 'react-icons/io';
 

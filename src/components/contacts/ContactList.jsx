@@ -1,10 +1,10 @@
 import { useSelector, useDispatch } from 'react-redux';
-// import {
-//   StyledContactList,
-//   StyledContactsItem,
-//   StyledDeleteBtn,
-//   StyledNumber,
-// } from './ContactList.styled';
+import {
+  StyledContactList,
+  StyledContactsItem,
+  StyledDeleteBtn,
+  StyledNumber,
+} from './ContactList.styled';
 import { MdClose } from 'react-icons/md';
 import { getContacts, getFilter } from 'redux/selectors';
 import { deleteContact } from 'redux/contactsSlice';

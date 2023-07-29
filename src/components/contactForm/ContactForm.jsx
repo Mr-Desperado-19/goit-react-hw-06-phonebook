@@ -3,15 +3,15 @@ import { useSelector, useDispatch } from 'react-redux';
 import * as Yup from 'yup';
 import { FcPlus } from 'react-icons/fc';
 
-// import {
-//   ErrorMessage,
-//   Form,
-//   StyledAddContactBtn,
-//   StyledBtnWrap,
-//   StyledLabelWrap,
-//   StyledNumberTextWrap,
-//   StyledTextWrap,
-// } from './ContactForm.styled';
+import {
+  ErrorMessage,
+  Form,
+  StyledAddContactBtn,
+  StyledBtnWrap,
+  StyledLabelWrap,
+  StyledNumberTextWrap,
+  StyledTextWrap,
+} from './ContactForm.styled';
 import { addContact } from 'redux/contactsSlice';
 import { getContacts } from 'redux/selectors';
 
