@@ -1,16 +1,32 @@
-import PropTypes from 'prop-types';
-import "./Filter.scss"
+import { useSelector, useDispatch } from 'react-redux';
+import { getFilter } from 'redux/selectors';
+// import {
+//   StyledFilterTextWrap,
+//   StyledFiltrWrap,
+//   StyledInput,
+// } from './Filter.styled';
+import { MdPersonSearch } from 'react-icons/md';
+import { setFilter } from 'redux/filtersSlice';
 
-const Filter = ({ value, onChange }) => (
-  <label className='label-filter'>
-    Find contacts by name
-    <input className='input-filter' type="text" value={value} onChange={onChange} />
-  </label>
-);
+export const Filter = () => {
+  const filter = useSelector(getFilter);
+  const dispatch = useDispatch();
 
-Filter.propTypes = {
-  value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
+  const changeFilter = evt => {
+    dispatch(setFilter(evt.currentTarget.value));
+  };
+  return (
+    <StyledFiltrWrap>
+      <b>Find contacts by name</b>
+      <StyledFilterTextWrap>
+        <StyledInput
+          type="text"
+          value={filter}
+          onChange={changeFilter}
+          placeholder="Search name..."
+        />
+        <MdPersonSearch />
+      </StyledFilterTextWrap>
+    </StyledFiltrWrap>
+  );
 };
-
-export default Filter;
